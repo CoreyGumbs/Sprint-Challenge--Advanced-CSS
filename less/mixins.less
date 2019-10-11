@@ -6,3 +6,16 @@
     justify-content: @justify;  
     align-content: @align-content;
 }
+
+.signUpBtn(@padding, @font-size, @bg-color: @btn-bg-color, @color: @porcelain, @hover-bg-color: @btn-bg-color, @hover-txt-color: @sea-shell){
+    padding: @padding;
+    font-size: @font-size;
+    background-color: @bg-color;
+    color: @color;
+
+    .btn:hover{
+        background-color: @hover-bg-color;
+        color: @hover-txt-color;
+    }
+
+}

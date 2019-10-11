@@ -199,6 +199,9 @@ p {
   font-size: 1.8rem;
   color: #454A59;
 }
+.navigation .nav-container .nav-links a:hover {
+  color: #23293B;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
