@@ -2,9 +2,10 @@
 
 .home {
     margin-top: @home-top-margin;
-    
+
   .intro {
     img{
+      width: 100%;
       border-radius: 20px;
     }
 
@@ -15,7 +16,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -87,4 +88,30 @@
       }
     }
   }
+
+  @media@phone{
+    margin-top: 0;
+
+    .intro{
+      img{
+        border-radius: 5px;
+      }
+    }
+
+    .space-images{
+      border: 1px solid red;
+      padding: 0;
+      height: 100%;
+
+      .blast{
+        width: 100%;
+      }
+
+      img:nth-child(n+2){
+        visibility: hidden;
+      }
+      
+    }
+  }
+
 }// home
