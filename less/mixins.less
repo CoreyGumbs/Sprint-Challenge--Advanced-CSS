@@ -7,15 +7,10 @@
     align-content: @align-content;
 }
 
-.signUpBtn(@padding, @font-size, @bg-color: @btn-bg-color, @color: @porcelain, @hover-bg-color: @btn-bg-color, @hover-txt-color: @sea-shell){
+.signUpBtn(@padding, @font-size, @radius, @bg-color: @btn-bg-color, @color: @porcelain){
     padding: @padding;
     font-size: @font-size;
     background-color: @bg-color;
+    border-radius: @radius;
     color: @color;
-
-    .btn:hover{
-        background-color: @hover-bg-color;
-        color: @hover-txt-color;
-    }
-
 }
