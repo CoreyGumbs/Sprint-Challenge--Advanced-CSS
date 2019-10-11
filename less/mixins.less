@@ -1,4 +1,8 @@
 // Mixins Here
+.elementWidth(@width: @max-width){
+    width: @width;
+}
+
 
 .flexBox(@direction, @wrap, @justify, @align-content){
     display: flex;
@@ -7,7 +11,8 @@
     align-content: @align-content;
 }
 
-.signUpBtn(@padding, @font-size, @radius, @bg-color: @btn-bg-color, @color: @porcelain){
+.signUpBtn(@width: 0,@font-size, @radius, @padding: 10px 20px, @bg-color: @btn-bg-color, @color: @porcelain){
+    width: @width;
     padding: @padding;
     font-size: @font-size;
     background-color: @bg-color;

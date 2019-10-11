@@ -2,26 +2,26 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: @max-width;
+    .elementWidth();
     height: @nav-bar-height;
     .flexBox(row, wrap, center, center);
     background-color: @nav-bg-opacity;
 
     .nav-container{
         max-width: @nav-container-max-width;
-        width: @max-width;
+        .elementWidth();
         margin: auto;
         .flexBox(column, wrap, center, center);
 
         .nav-header{
-            width: 100%;
+            .elementWidth();
             margin: 20px 0 10px 0;
             text-align: center;
             font-size: 5rem;
         }
 
         .nav-links{
-            width: 70%;
+            .elementWidth(70%);
             margin: 0 auto;
             padding: 10px 0;
             .flexBox(row, wrap, space-evenly, center);
