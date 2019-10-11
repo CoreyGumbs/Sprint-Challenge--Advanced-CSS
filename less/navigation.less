@@ -2,13 +2,33 @@
     position: fixed;
     width: @max-width;
     height: @nav-bar-height;
-    border: 1px solid blue;
-    background-color: @nav-bg;
+    .flexBox(row, wrap, center, center);
+    background-color: @nav-bg-opacity;
 
     .nav-container{
         max-width: @nav-container-max-width;
         width: @max-width;
         margin: auto;
-        border: 1px solid red;
+        .flexBox(column, wrap, center, center);
+
+        .nav-header{
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        .nav-links{
+            width: 70%;
+            margin: 0 auto;
+            padding: 10px 0;
+            .flexBox(row, wrap, space-evenly, center);
+
+            a{
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: @nav-font;
+            }
+        }
     }
 }
