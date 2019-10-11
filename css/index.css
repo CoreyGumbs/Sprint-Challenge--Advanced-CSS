@@ -313,15 +313,10 @@ footer {
   .home .intro img {
     border-radius: 5px;
   }
-  .home .space-images {
-    border: 1px solid red;
-    padding: 0;
-    height: 100%;
-  }
   .home .space-images .blast {
     width: 100%;
   }
   .home .space-images img:nth-child(n+2) {
-    visibility: hidden;
+    display: none;
   }
 }
